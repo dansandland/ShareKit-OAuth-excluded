@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.subspec 'Core' do |core|
     core.resource      = 'Classes/ShareKit/ShareKit.bundle', 'Classes/ShareKit/Core/SHKSharers.plist'
     core.source_files  = 'Classes/ShareKit/{Configuration,Core,Customize UI,UI,Reachability}/**/*.{h,m,c}', 'Classes/ShareKit/Sharers/Actions/**/*.{h,m,c}'
-    core.exclude_files = 'Base64Transcoder.{c,h}', 'hmac.{c,h}', 'sha1.{c,h}', 'OAAsynchronousDataFetcher.{h,m}', 'OAConsumer.{h,m}', 'OADataFetcher.{h,m}', 'OAHMAC_SHA1SignatureProvider.{h,m}', 'OAMutableURLRequest.{h,m}', 'OAPlaintextSignatureProvider.{h,m}', 'OARequestParameter.{h,m}', 'OAServiceTicket.{h,m}', 'OASignatureProviding.h', 'OAToken.{h,m}'
+    core.exclude_files = 'Classes/ShareKit/Core/Base64Transcoder.{c,h}', 'Classes/ShareKit/Core/hmac.{c,h}', 'Classes/ShareKit/Core/sha1.{c,h}', 'Classes/ShareKit/Core/OAAsynchronousDataFetcher.{h,m}', 'Classes/ShareKit/Core/OAConsumer.{h,m}', 'Classes/ShareKit/Core/OADataFetcher.{h,m}', 'Classes/ShareKit/Core/OAHMAC_SHA1SignatureProvider.{h,m}', 'Classes/ShareKit/Core/OAMutableURLRequest.{h,m}', 'Classes/ShareKit/Core/OAPlaintextSignatureProvider.{h,m}', 'Classes/ShareKit/Core/OARequestParameter.{h,m}', 'Classes/ShareKit/Core/OAServiceTicket.{h,m}', 'Classes/ShareKit/Core/OASignatureProviding.h', 'Classes/ShareKit/Core/OAToken.{h,m}'
     core.frameworks    = 'SystemConfiguration', 'Security', 'MessageUI', "AVFoundation", "MobileCoreServices", "CoreMedia"
     core.dependency 'SSKeychain', "0.2.1"
   end
